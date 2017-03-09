@@ -1,0 +1,124 @@
+.box {
+    width: 30px;
+    bottom: 2;
+    background-color: cadetblue;
+    position: absolute;
+    border-style: none;
+    border-width: 5px;
+    text-align: center;
+    
+}
+
+.barText {
+    position: absolute;
+    bottom: 2;
+    font: bold 40px/1px sans-serif;
+    width: 100%;
+    height: 15;
+}
+
+.middle {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 10%;
+    bottom: 10%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+#middleLeft {
+    position: absolute;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: black;
+}
+
+#middleRight {
+    font: bold 15px/15px sans-serif;
+    position: absolute;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    background: #1a1a1a;
+    color: darkorange;
+}
+
+#middleRightTop {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: darkorange;
+}
+
+.sortCode {
+    visibility: hidden;
+    position: absolute;
+    top: 10%;
+}
+
+#middleRightBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: black;
+}
+.feedbackText {
+    color: darkorange;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.box.move {
+    -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+button {
+    background-color: darkorange; 
+    border: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font: bold 15px/15px sans-serif;
+    display:inline-block;
+    width: 12%;
+    height: 50%;
+    position: relative;
+    top: 20%;
+}
+
+
+button:hover {
+    background-color: #1b96fe;
+    cursor: pointer;
+}
+
+.imageBtn:hover {
+    filter: grayscale(10);
+}
+
+.imageBtn {
+    width: 100px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+

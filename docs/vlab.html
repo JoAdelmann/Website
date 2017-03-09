@@ -1,0 +1,121 @@
+<html>
+
+   <head>
+        <meta content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/vlab.css">
+        <link rel="stylesheet" href="../styles/general.css">
+       
+       <title>Versuchslabor</title>
+      
+       <script type="text/javascript" src="../scripts/vlab.js" ></script>
+       <script type="text/javascript" src="../scripts/jstorage.js"></script>
+       <script type="text/javascript" src="../scripts/Sorter.js"></script>
+   </head>
+   
+   <body>
+       <header class="topSection">
+           <div id="logo"><a href="../docs/index.html" ><img class="imageBtn" src="../images/Logomakr_0wq3o5.png" title="zurück zum Start" alt="zurück zum Start"></a></div>
+           <div id="topMiddle">
+               <nav class="menu">
+                <ul>
+                    <li><a href="#" onclick="openHelp();"><img class="imageBtn" src="../images/Buttons/Logomakr_6l1Swp.png" alt="Anleitung"></a></li>
+                    <li><a href="#"><img class="imageBtn" src="../images/Buttons/Logomakr_22kwa2.png" alt="Würfeln"></a>
+                        <ul>
+                            <li><a href="#" onclick="randomizeButton();return false;">Zufällig</a></li>
+                            <li><a href="#" onclick="invertButton();return false;">Absteigend</a></li>
+                        </ul></li>
+                    <li><a href="#" title="Sortieralgorithmen"><img class="imageBtn" src="../images/Buttons/Logomakr_0ZzfOh.png" alt="Sortieralgorithmen"></a>
+                        <ul>
+                            <li><a href="#" onclick="selectAlgo(0); return false;">BubbleSort</a></li>
+                            <li><a href="#"  onclick="selectAlgo(1); return false;">SelectionSort</a></li>
+                            <li><a href="#"  onclick="selectAlgo(2); return false;">InsertionSort</a></li>
+                            <li><a href="#"  onclick="selectAlgo(3); return false;">MergeSort</a></li>
+                            <li><a href="#"  onclick="selectAlgo(4); return false;">QuickSort</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               </nav>
+           </div>
+           <div id="topRight"></div>  
+       </header>
+       
+       <div class="middle">
+           <div id="middleLeft">
+               <div class="box" id="box0"  > <div class="barText" id="barText0">1</div> </div>
+               <div class="box" id="box1"  > <div class="barText" id="barText1">2</div></div>
+               <div class="box" id="box2"  > <div class="barText" id="barText2">3</div> </div>
+               <div class="box" id="box3"  > <div class="barText" id="barText3">4</div> </div>
+               <div class="box" id="box4"  > <div class="barText" id="barText4">5</div> </div>
+               <div class="box" id="box5"  > <div class="barText" id="barText5">6</div> </div>
+               <div class="box" id="box6"  > <div class="barText" id="barText6">7</div> </div>
+               <div class="box" id="box7"  > <div class="barText" id="barText7">8</div> </div>
+               <div class="box" id="box8"  > <div class="barText" id="barText8">9</div> </div>
+               <div class="box" id="box9"  > <div class="barText" id="barText9">10</div> </div>
+           </div>
+           <div id="middleRight">
+               <div id="middleRightTop"><h1 id="algo"></h1></div>
+               <div class="sortCode" id="bubbleSort">
+                   <pre><code class="outerFor" id="outerFor">for(var i=0; i &lt; array.length; i++ {
+  <code id="innerFor">for(var j = 1; j &lt; array.length; j++) {
+    <code id="outerIf">if(array[i] &gt; array[j]) {
+      <code id ="innerIf">swap(i,j);</code>
+    }</code> 
+  }</code> 
+} </code></pre>
+               </div>
+               
+               <div class="sortCode" id="selectionSort">
+               <pre><code id="findMinIndex">findMinIndex(indexSorted,array.length-1);
+<code id="swapElems">swap(array[indexSorted+1],array[minIndex]);</code></code></pre>
+               </div>
+               
+               <div class="sortCode" id="insertionSort">
+                   <pre><code id="temp">var temp;</code>
+<code id="forLoop">for (var i = 1; i &lt; array.length; i++) {
+  <code id="tempEqArrayI">temp = array[i];</code>
+  <code id="varJEqI">var j = i;</code>
+  <code id="while">while (j > 0 &amp;&amp; array[j - 1] > temp) {
+    <code id="arrayJEqArrayJMO">array[j] = array[j - 1];</code>
+    <code id="jMM">j--;</code>
+  }</code>
+  <code id="arrayJEqTemp">array[j] = temp;</code>
+}</code></pre>
+               </div>
+               
+               <div class="sortCode" id="mergeSort">
+                   <pre><code id="sortTwo">sort(zweierpartitionen);</code>
+<code id="mergeTwo">merge(zweierpartitionen);</code>
+<code id="sortFour">sort(viererpartitionen);</code>
+<code id="mergeFour">merge(viererpartitionen);</code>
+<code id="sortEight">sort(achterpartitionen);</code>
+<code id="mergeEight">merge(achterpartitionen);</code>
+<code id="sortRest">sort(restpartitionen);</code>
+<code id="mergeRest">merge(restpartitionen);</code></pre>
+               </div>
+               <div class="sortCode" id="quickSort">
+                   <pre><code id="selectPivot">wähle Pivot-Element aus;</code>
+<code id="greaterThenPivot">größer als Pivot-Element nach rechts;</code>
+<code id="lessThenPivot">kleiner als Pivot-Element nach links;</code>
+<code id="sortLeft">sortiere linken Bereich;</code>
+<code id="sortRight">sortiere rechten Bereich;</code></pre>
+               </div>
+               
+               <div id="middleRightBottom">
+                   <div class="feedbackText" id="finished"><h1>Fertig!</h1></div>
+                   <div class="feedbackText" id="sorting"><h1>Sortiere...</h1></div>
+               </div>
+           </div>
+       </div>
+       
+  <footer class="bottomSection">
+      <button onclick="clearBtn();">Clear</button>
+      <button onclick="reloadVlab();">Reset</button>
+      <button id="animateBtn" onclick="fullAnimation();">Animieren</button>
+      <button id="singleStepBtn" onclick="singleStep();">Einzelschritt</button>
+      <button id="nextBtn" onclick="selectNext();">Weiter</button>
+      <div id="time"></div>
+   </footer>
+      
+   </body>
+</html>

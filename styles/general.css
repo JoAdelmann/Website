@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    color: darkorange;
+}
+
+.topSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+
+.middleSection {
+    position: absolute;
+    bottom: 10%;
+    top: 10%;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font: bold 18px/20px sans-serif;
+    overflow: auto;
+    color: darkorange;
+    background-color: #1a1a1a;
+}
+
+.bottomSection {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: darkorange;
+    font: bold 20px/20px sans-serif;
+
+}
+
+#time {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    height: auto;
+    text-align: right;
+}
+
+#copyright {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    height: auto;
+    text-align: left;
+    color: darkorange;
+}
+
+
+#topMiddle {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    float: left;
+    text-align: center;
+    background: black;
+    
+}
+
+#topRight {
+    height: 100%;
+    width: 15%;
+    position: relative;
+    float: left;
+    color: darkorange;
+    font: bold 15px/20px sans-serif;
+    text-align: justify;
+}
+
+#topRight img {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    opacity: 0.20;
+}
+
+#logo {
+    height: 100%;
+    width: 15%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+#logo img {
+    margin-top: 3%;
+    width: 55%;
+    height: 85%;
+    filter: grayscale(0%);
+}
+
+#logo:hover {
+    filter: grayscale(100%);
+}
+
+.menu{
+    border:none;
+    border:0px;
+    margin-top: 0px;
+    font: bold 25px/20px sans-serif;
+    height: 100%;
+}
+
+.menu ul{
+    background-color: black;
+    height:100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.menu li{
+    display: inline-block;
+    padding:0px 0px 0px 15px;
+}
+
+.menu li a{
+    color: darkorange;
+    display:block;
+    line-height:50px;
+    padding: 0px 25px;
+    text-align:center;
+    text-decoration:none;
+}
+
+.menu li a:hover{
+    background: #1b96fe;
+    color: darkorange;
+    text-decoration:none;
+    -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+    
+    
+}
+
+.menu ul li:hover a{
+    background: darkorange;
+    color: black;
+    text-decoration:none;
+}
+
+.menu li ul{
+    display:none;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:200px;
+    z-index:200;
+}
+
+.menu li:hover ul{
+    display:block;
+    
+}
+
+
+.menu li li {
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:200px;
+    background: darkorange;
+/*this is where the rounded corners for the dropdown disappears*/
+}
+
+.menu li:hover li a{
+    background:none;
+}
+
+.menu li ul a{
+    display:block;
+    height:50px;
+    font: bold 20px/20px sans-serif;
+    margin:0px;
+    padding:10px 10px 10px 10px;
+    text-align: center;
+}
+
+.menu li ul a:hover, .menu li ul li:hover a{
+    border:0px;
+    text-decoration:none;
+    background: #1b96fe;
+    -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+    -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, .3);
+}
+
+
+
+.redText{
+    color: red;
+}
+
+.greenText{
+    color: green;
+}
+
+.yellowText{
+    color: yellow;
+}
+
+.blueText {
+    color: #1b96fe;
+}

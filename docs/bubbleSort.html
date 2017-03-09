@@ -1,0 +1,71 @@
+<html>
+    <head>
+        
+        <title>Bubblesort</title>
+        <meta content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/general.css">
+        
+        <script type="text/javascript" src="../scripts/index.js"></script>
+    </head>
+    <body>
+        <header class="topSection">
+            <div id="logo"><a href="../docs/index.html"><img src="../images/Logomakr_0wq3o5.png"></a></div>
+            <div id="topMiddle">
+               <nav class="menu">
+                    <ul>
+                        <li><a href="#">Langsam</a>
+                            <ul>
+                                <li><a href="bubbleSort.html">Bubblesort</a></li>
+                                <li><a href="selectionSort.html">Selectionsort</a></li>
+                                <li><a href="insertionSort.html">Insertionsort</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">Schnell</a>
+                            <ul>
+                                <li><a href="mergeSort.html">Mergesort</a></li>
+                                <li><a href="quickSort.html">Quicksort</a></li>
+                            </ul> 
+                        </li>
+                        <li><a href="/docs/vlab.html">Versuchslabor</a></li>
+                        <li><a href="../docs/impressum.html">Impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="topRight">
+                
+            </div>
+        </header>
+        
+        <section class="middleSection">
+            <div class="middleMiddle">
+                <h1>Der Bubblesort</h1>
+                <p class="justify"> Der Bubblesort ist einer der einfachsten Sortieralgorithmen, <br>
+                obwohl er nicht zu den "Natürlichen" oder "Intuitiven" zählt.</p>
+                <br>
+                <h2>Verfahren</h2>
+                <img src="../images/bubbleSort/bubbleUnsorted.PNG" class="image"> <br>
+                <p>Angenommen das obere Array soll nun sortiert werden. <br> 
+                Dazu betrachte man zunächst die Stellen 0 und 1 des Arrays. <br>
+                <br>
+                In diesem Fall die Werte <span class="greenText"> 8 </span> und <span class="redText"> 1 </span>. <br> <br>
+                Falls <span class="greenText"> 8 </span> größer ist als <span class="redText"> 1 </span> dann 
+                tausche die beiden Elemente:</p> 
+                <img src="../images/bubbleSort/step1.png" class="image"> <br>
+                <p>Vergleiche nun <span class="greenText"> 8 </span> mit jedem weiteren Element,
+                dann ergibt sich: <br></p> 
+                <img src="../images/bubbleSort/step2.PNG" class="image"> <br>
+                <p>Da die <span class="redText">10</span> größer als die <span class="greenText"> 8 </span>  ist, wird mit der <span class="redText">10</span> fortgefahren: </p>
+                <img src="../images/bubbleSort/step3.PNG" class="image"> <br>
+                Nun beginnt das Spiel von vorne, solange bis jedes Element sortiert wurde: <br>
+                <img src="../images/sorted.png" class="image">
+            </div>    
+        </section>
+        
+        <footer class="bottomSection" >
+            <div id="copyright">&copy; 2017 - Johannes Adelmann</div>
+            <div id="time"></div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        
+        <title>Mergesort</title>
+        <meta content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/general.css">
+        
+        <script type="text/javascript" src="../scripts/index.js"></script>
+    </head>
+    <body>
+        <section class="topSection">
+           <div id="logo"><a href="../docs/index.html"><img src="../images/Logomakr_0wq3o5.png"></a></div>
+            <div id="topMiddle">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Langsam</a>
+                            <ul>
+                                <li><a href="bubbleSort.html">Bubblesort</a></li>
+                                <li><a href="selectionSort.html">Selectionsort</a></li>
+                                <li><a href="insertionSort.html">Insertionsort</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">Schnell</a>
+                            <ul>
+                                <li><a href="mergeSort.html">Mergesort</a></li>
+                                <li><a href="quickSort.html">Quicksort</a></li>
+                            </ul> 
+                        </li>
+                        <li><a href="/docs/vlab.html">Versuchslabor</a></li>
+                        <li><a href="../docs/impressum.html">Impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="topRight">
+                
+            </div>
+        </section>
+        
+        <section class="middleSection">
+            <div class="middleMiddle">
+                <h1>Der Mergesort</h1>
+                <p class="justify"> Der Mergesort zählt zu den schnellsten Sortieralgorithmen.</p>
+                <br>
+                <h2>Verfahren</h2>
+                <img src="../images/mergeSort/step1.PNG" class="image"> <br>
+                <p>Angenommen das obere Array soll nun sortiert werden. <br> 
+                </p>
+                <p>Zunächst bildet man Zweierpartitionen und sortiert diese. <br>
+                </p>
+                <img class="image" src="../images/mergeSort/step2.png"> <br>
+                <p>Diese fasst man nun zu Viererpartitionen zusammen und sortiert sie ebenfalls. </p> <br>
+                <img class="image" src="../images/mergeSort/step3.png"> <br>
+                <p>Zuletzt werden die Vierepartitonen zu einer Achterpartition zusammengefasst und sortiert. <br>
+                Die verbleibende Zweierpartition wird dann einsortiert.</p>
+                <br>
+                <img src="../images/sorted.png" class="image"><br>
+            </div>    
+        </section>
+        
+        <section class="bottomSection" >
+            <div id="copyright">&copy; 2017 - Johannes Adelmann</div>
+            <div id="time"></div>
+        </section>
+    </body>
+</html>

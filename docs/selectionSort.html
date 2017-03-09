@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        
+        <title>Selectionsort</title>
+        <meta content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/general.css">
+        
+        <script type="text/javascript" src="../scripts/index.js"></script>
+    </head>
+    <body>
+        <section class="topSection">
+            <div id="logo"><a href="../docs/index.html"><img src="../images/Logomakr_0wq3o5.png"></a></div>
+            <div id="topMiddle">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Langsam</a>
+                            <ul>
+                                <li><a href="bubbleSort.html">Bubblesort</a></li>
+                                <li><a href="selectionSort.html">Selectionsort</a></li>
+                                <li><a href="insertionSort.html">Insertionsort</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">Schnell</a>
+                            <ul>
+                                <li><a href="mergeSort.html">Mergesort</a></li>
+                                <li><a href="quickSort.html">Quicksort</a></li>
+                            </ul> 
+                        </li>
+                        <li><a href="/docs/vlab.html">Versuchslabor</a></li>
+                        <li><a href="../docs/impressum.html">Impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="topRight">
+                
+            </div>
+        </section>
+        
+        <section class="middleSection">
+            <div class="middleMiddle">
+                <h1>Der Selectionsort</h1>
+                <p class="justify"> Der Selectionsort zählt zu den einfachen natürlichen <br> Sortieralgorithmen,
+                da er sehr intuitiv ist. <br> Allerdings ist er bei sehr großen Datenmengen eher langsam.</p>
+                <br>
+                <h2>Verfahren</h2>
+                <img src="../images/selectionSort/step1.png" class="image"> <br>
+                <p>Angenommen das obere Array soll nun sortiert werden. <br> 
+                </p>
+                <p>Dazu sucht man zunächst das kleinste Element. In diesem Fall die <span class="redText">1</span>. <br>
+                Da noch kein Element vorher einsortiert wurde, setzt man die <span class="redText">1</span> an den Anfang: <br>
+                </p>
+                <img class="image" src="../images/selectionSort/step2.png"> <br>
+                <p>Jetzt besteht der sortierte Bereich aus dem Element <span class="greenText">1</span>. <br>
+                Suche nun wieder das kleinste Element im unsortierten Bereich (die <span class="redText">2</span>) <br> und sortiere sie an das Ende des sortierten Bereichs (rechts von  <span class="greenText">1</span>). <br></p>
+                <img class="image" src="../images/selectionSort/step3.png"> <br> <br>
+                <p>Jetzt wird die <span class="redText">3</span>, dann die <span class="redText">4</span>, usw... einsortiert, bis das Array vollständig sortiert ist.</p> <br>
+                <img src="../images/sorted.png" class="image"><br>
+
+            </div>    
+        </section>
+        
+        <section class="bottomSection" >
+            <div id="copyright">&copy; 2017 - Johannes Adelmann</div>
+            <div id="time"></div>
+        </section>
+    </body>
+</html>
